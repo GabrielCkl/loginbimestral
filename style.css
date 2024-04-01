@@ -1,0 +1,126 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #0a2d44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: none;
+  
+}
+
+.login-form {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 3px solid #f6da6d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form .input-field {
+  display: flex;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.login-form .input-field i {
+  font-size: 24px;
+  color: #333;
+  margin-right: 10px;
+  line-height: 1.5;
+}
+
+.login-form img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(2px);
+  /* Added an image here to mimic the background image in the login form */
+  content: url("path/to/your/image.jpg");
+  background-size: cover;
+}
+
+.login-form i {
+  /* Assuming you want to remove this rule */
+  font-size: 48px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.login-form input::before,
+.login-form input::after {
+  position: absolute;
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #f6da6d;
+}
+
+.login-form input::before {
+  content: "\f007"; /* Ícone de usuário */
+  left: 10px;
+  top: 12px;
+}
+
+.login-form input::after {
+  content: "\f023"; /* Ícone de cadeadodo */
+  right: 10px;
+  top: 12px;
+}
+
+.login-form input:focus::before,
+.login-form input:focus::after {
+  color: #000;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #333;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #f6da6d;
+  cursor: pointer;
+}
